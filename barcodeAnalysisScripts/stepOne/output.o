@@ -1,0 +1,206 @@
+Sender: LSF System <lsfadmin@node187.hpc.local>
+Subject: Job 69279419: <python stepOneL5.py> in cluster <pennhpc> Done
+
+Job <python stepOneL5.py> was submitted from host <node157.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node187.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepOne> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python stepOneL5.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2708.78 sec.
+    Max Memory :                                 86560 MB
+    Average Memory :                             33717.88 MB
+    Total Requested Memory :                     350000.00 MB
+    Delta Memory :                               263440.00 MB
+    Max Swap :                                   89116 MB
+    Max Processes :                              3
+    Max Threads :                                67
+    Run time :                                   2755 sec.
+    Turnaround time :                            2763 sec.
+
+The output (if any) follows:
+
+Matching reads...
+finished matching reads
+joinRead1Read2Done
+Starting filtering steps...
+
+
+PS:
+
+Read file <./output.e> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@node209.hpc.local>
+Subject: Job 69279290: <python stepOneL2.py> in cluster <pennhpc> Done
+
+Job <python stepOneL2.py> was submitted from host <node157.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node209.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepOne> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python stepOneL2.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   11947.86 sec.
+    Max Memory :                                 311612 MB
+    Average Memory :                             252392.91 MB
+    Total Requested Memory :                     350000.00 MB
+    Delta Memory :                               38388.00 MB
+    Max Swap :                                   314221 MB
+    Max Processes :                              3
+    Max Threads :                                67
+    Run time :                                   12099 sec.
+    Turnaround time :                            12135 sec.
+
+The output (if any) follows:
+
+Matching reads...
+finished matching reads
+joinRead1Read2Done
+Starting filtering steps...
+
+
+PS:
+
+Read file <./output.e> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@node179.hpc.local>
+Subject: Job 69279380: <python stepOneL3.py> in cluster <pennhpc> Done
+
+Job <python stepOneL3.py> was submitted from host <node157.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node179.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepOne> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python stepOneL3.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   12031.77 sec.
+    Max Memory :                                 311654 MB
+    Average Memory :                             246127.28 MB
+    Total Requested Memory :                     350000.00 MB
+    Delta Memory :                               38346.00 MB
+    Max Swap :                                   314258 MB
+    Max Processes :                              3
+    Max Threads :                                67
+    Run time :                                   12170 sec.
+    Turnaround time :                            12172 sec.
+
+The output (if any) follows:
+
+Matching reads...
+finished matching reads
+joinRead1Read2Done
+Starting filtering steps...
+
+
+PS:
+
+Read file <./output.e> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@node199.hpc.local>
+Subject: Job 69280519: <python stepOneL4.py> in cluster <pennhpc> Exited
+
+Job <python stepOneL4.py> was submitted from host <node154.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node199.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepOne> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python stepOneL4.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.11 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     400000.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              1
+    Max Threads :                                1
+    Run time :                                   20 sec.
+    Turnaround time :                            23 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <./output.e> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@node199.hpc.local>
+Subject: Job 69280567: <python stepOneL4.py> in cluster <pennhpc> Done
+
+Job <python stepOneL4.py> was submitted from host <node154.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node199.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepOne> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python stepOneL4.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   11110.67 sec.
+    Max Memory :                                 311621 MB
+    Average Memory :                             255405.91 MB
+    Total Requested Memory :                     400000.00 MB
+    Delta Memory :                               88379.00 MB
+    Max Swap :                                   314224 MB
+    Max Processes :                              3
+    Max Threads :                                67
+    Run time :                                   11225 sec.
+    Turnaround time :                            11253 sec.
+
+The output (if any) follows:
+
+Matching reads...
+finished matching reads
+joinRead1Read2Done
+Starting filtering steps...
+
+
+PS:
+
+Read file <./output.e> for stderr output of this job.
+

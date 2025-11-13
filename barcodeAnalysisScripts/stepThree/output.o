@@ -1,0 +1,166 @@
+Sender: LSF System <lsfadmin@node179.hpc.local>
+Subject: Job 69270226: <#!/bin/bash; # input location is the location of the raw data - update this to be the location of your data in projects. fastqId is the folder which will be created after completion of this step and will contain the fastQ files.;# The final input is the csv file created which is specific to each experiment. Save this file in the repo folder of the project you are working on. ;# LV distance can be specified (-d). Default is 8 (-d8) for three files, 6 for one file. ;inputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepTwo";outputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepThree";PATH=$PATH:/home/goyaly/code/starcode; printf "starcode running\n"; starcode -i $inputDirectory/stepTwoBarcodes50.txt -d8 -o $outputDirectory/stepThreeBarcodes50_d8 --seq-id -s > $outputDirectory/50_8log.txt;printf "50_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes40.txt -d8 -o $outputDirectory/stepThreeBarcodes40_d8 --seq-id -s > $outputDirectory/40_8log.txt;printf "40_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d8 -o $outputDirectory/stepThreeBarcodes30_d8 --seq-id -s > $outputDirectory/30_8log.txt;printf "30_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d6 -o $outputDirectory/stepThreeBarcodes30_d6 --seq-id -s > $outputDirectory/30_6log.txt;printf "30_d6 done\n"; python stepThreeRun.py $inputDirectory/ $outputDirectory/> in cluster <pennhpc> Done
+
+Job <#!/bin/bash; # input location is the location of the raw data - update this to be the location of your data in projects. fastqId is the folder which will be created after completion of this step and will contain the fastQ files.;# The final input is the csv file created which is specific to each experiment. Save this file in the repo folder of the project you are working on. ;# LV distance can be specified (-d). Default is 8 (-d8) for three files, 6 for one file. ;inputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepTwo";outputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepThree";PATH=$PATH:/home/goyaly/code/starcode; printf "starcode running\n"; starcode -i $inputDirectory/stepTwoBarcodes50.txt -d8 -o $outputDirectory/stepThreeBarcodes50_d8 --seq-id -s > $outputDirectory/50_8log.txt;printf "50_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes40.txt -d8 -o $outputDirectory/stepThreeBarcodes40_d8 --seq-id -s > $outputDirectory/40_8log.txt;printf "40_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d8 -o $outputDirectory/stepThreeBarcodes30_d8 --seq-id -s > $outputDirectory/30_8log.txt;printf "30_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d6 -o $outputDirectory/stepThreeBarcodes30_d6 --seq-id -s > $outputDirectory/30_6log.txt;printf "30_d6 done\n"; python stepThreeRun.py $inputDirectory/ $outputDirectory/> was submitted from host <node156.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node179.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepThree> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+# input location is the location of the raw data - update this to be the location of your data in projects. fastqId is the folder which will be created after completion of this step and will contain the fastQ files.
+# The final input is the csv file created which is specific to each experiment. Save this file in the repo folder of the project you are working on. 
+# LV distance can be specified (-d). Default is 8 (-d8) for three files, 6 for one file. 
+inputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepTwo"
+outputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepThree"
+PATH=$PATH:/home/goyaly/code/starcode
+
+printf "starcode running\n"
+
+starcode -i $inputDirectory/stepTwoBarcodes50.txt -d8 -o $outputDirectory/stepThreeBarcodes50_d8 --seq-id -s > $outputDirectory/50_8log.txt
+printf "50_d8 done\n"
+starcode -i $inputDirectory/stepTwoBarcodes40.txt -d8 -o $outputDirectory/stepThreeBarcodes40_d8 --seq-id -s > $outputDirectory/40_8log.txt
+printf "40_d8 done\n"
+starcode -i $inputDirectory/stepTwoBarcodes30.txt -d8 -o $outputDirectory/stepThreeBarcodes30_d8 --seq-id -s > $outputDirectory/30_8log.txt
+printf "30_d8 done\n"
+starcode -i $inputDirectory/stepTwoBarcodes30.txt -d6 -o $outputDirectory/stepThreeBarcodes30_d6 --seq-id -s > $outputDirectory/30_6log.txt
+printf "30_d6 done\n"
+
+python stepThreeRun.py $inputDirectory/ $outputDirectory/
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   27.04 sec.
+    Max Memory :                                 54 MB
+    Average Memory :                             16.67 MB
+    Total Requested Memory :                     300000.00 MB
+    Delta Memory :                               299946.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                68
+    Run time :                                   44 sec.
+    Turnaround time :                            46 sec.
+
+The output (if any) follows:
+
+starcode running
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+50_d8 done
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+40_d8 done
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+30_d8 done
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+30_d6 done
+Starcode files saved...
+Creating starcode replaced table...
+Sender: LSF System <lsfadmin@node192.hpc.local>
+Subject: Job 69280904: <#!/bin/bash; # input location is the location of the raw data - update this to be the location of your data in projects. fastqId is the folder which will be created after completion of this step and will contain the fastQ files.;# The final input is the csv file created which is specific to each experiment. Save this file in the repo folder of the project you are working on. ;# LV distance can be specified (-d). Default is 8 (-d8) for three files, 6 for one file. ;inputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepTwo";outputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepThree";PATH=$PATH:/home/goyaly/code/starcode; printf "starcode running\n"; starcode -i $inputDirectory/stepTwoBarcodes50.txt -d8 -o $outputDirectory/stepThreeBarcodes50_d8 --seq-id -s > $outputDirectory/50_8log.txt;printf "50_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes40.txt -d8 -o $outputDirectory/stepThreeBarcodes40_d8 --seq-id -s > $outputDirectory/40_8log.txt;printf "40_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d8 -o $outputDirectory/stepThreeBarcodes30_d8 --seq-id -s > $outputDirectory/30_8log.txt;printf "30_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d6 -o $outputDirectory/stepThreeBarcodes30_d6 --seq-id -s > $outputDirectory/30_6log.txt;printf "30_d6 done\n"; python stepThreeRun.py $inputDirectory/ $outputDirectory/> in cluster <pennhpc> Done
+
+Job <#!/bin/bash; # input location is the location of the raw data - update this to be the location of your data in projects. fastqId is the folder which will be created after completion of this step and will contain the fastQ files.;# The final input is the csv file created which is specific to each experiment. Save this file in the repo folder of the project you are working on. ;# LV distance can be specified (-d). Default is 8 (-d8) for three files, 6 for one file. ;inputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepTwo";outputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepThree";PATH=$PATH:/home/goyaly/code/starcode; printf "starcode running\n"; starcode -i $inputDirectory/stepTwoBarcodes50.txt -d8 -o $outputDirectory/stepThreeBarcodes50_d8 --seq-id -s > $outputDirectory/50_8log.txt;printf "50_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes40.txt -d8 -o $outputDirectory/stepThreeBarcodes40_d8 --seq-id -s > $outputDirectory/40_8log.txt;printf "40_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d8 -o $outputDirectory/stepThreeBarcodes30_d8 --seq-id -s > $outputDirectory/30_8log.txt;printf "30_d8 done\n";starcode -i $inputDirectory/stepTwoBarcodes30.txt -d6 -o $outputDirectory/stepThreeBarcodes30_d6 --seq-id -s > $outputDirectory/30_6log.txt;printf "30_d6 done\n"; python stepThreeRun.py $inputDirectory/ $outputDirectory/> was submitted from host <node154.hpc.local> by user <goyaly> in cluster <pennhpc>.
+Job was executed on host(s) <16*node192.hpc.local>, in queue <normal>, as user <goyaly> in cluster <pennhpc>.
+</home/goyaly> was used as the home directory.
+</project/arjunrajlab/mapseq/repo/VitoData/SubmissionScripts/stepThree> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+# input location is the location of the raw data - update this to be the location of your data in projects. fastqId is the folder which will be created after completion of this step and will contain the fastQ files.
+# The final input is the csv file created which is specific to each experiment. Save this file in the repo folder of the project you are working on. 
+# LV distance can be specified (-d). Default is 8 (-d8) for three files, 6 for one file. 
+inputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepTwo"
+outputDirectory="/project/arjunrajlab/mapseq/repo/VitoData/Analysis/stepThree"
+PATH=$PATH:/home/goyaly/code/starcode
+
+printf "starcode running\n"
+
+starcode -i $inputDirectory/stepTwoBarcodes50.txt -d8 -o $outputDirectory/stepThreeBarcodes50_d8 --seq-id -s > $outputDirectory/50_8log.txt
+printf "50_d8 done\n"
+starcode -i $inputDirectory/stepTwoBarcodes40.txt -d8 -o $outputDirectory/stepThreeBarcodes40_d8 --seq-id -s > $outputDirectory/40_8log.txt
+printf "40_d8 done\n"
+starcode -i $inputDirectory/stepTwoBarcodes30.txt -d8 -o $outputDirectory/stepThreeBarcodes30_d8 --seq-id -s > $outputDirectory/30_8log.txt
+printf "30_d8 done\n"
+starcode -i $inputDirectory/stepTwoBarcodes30.txt -d6 -o $outputDirectory/stepThreeBarcodes30_d6 --seq-id -s > $outputDirectory/30_6log.txt
+printf "30_d6 done\n"
+
+python stepThreeRun.py $inputDirectory/ $outputDirectory/
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   329.08 sec.
+    Max Memory :                                 1047 MB
+    Average Memory :                             480.02 MB
+    Total Requested Memory :                     300000.00 MB
+    Delta Memory :                               298953.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                68
+    Run time :                                   331 sec.
+    Turnaround time :                            333 sec.
+
+The output (if any) follows:
+
+starcode running
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+50_d8 done
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+40_d8 done
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+30_d8 done
+running starcode with 1 thread
+reading input files
+raw format detected
+sorting
+progress: 0.00% progress: 16.67% progress: 33.33% progress: 50.00% progress: 66.67% progress: 83.33% progress: 100.00%
+spheres clustering
+30_d6 done
+Starcode files saved...
+Creating starcode replaced table...
